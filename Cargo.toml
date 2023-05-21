@@ -1,0 +1,16 @@
+[workspace]
+resolver = "2"
+members = [
+    "panmem-domain",
+    "panmem-desktop/src-tauri",
+    "panmem-shared-lib"
+]
+[patch.crates-io]
+panmem-desktop = { path = "./panmem-desktop/src-tauri" }
+panmem-domain = { path = "./panmem-domain" }
+panmem-shared-lib = { path = "./panmem-shared-lib" }
+
+[profile.release]
+strip = true 
+lto = true
+opt-level = "s"

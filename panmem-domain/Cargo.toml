@@ -1,10 +1,10 @@
 [package]
-name = "panmem-shared-lib"
+name = "panmem-domain"
 version = "0.1.0"
 edition = "2021"
 
 [lib]
-name = "panmem_shared_lib"
+name = "panmem_domain"
 path = "src/lib.rs"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

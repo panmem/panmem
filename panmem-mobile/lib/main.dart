@@ -56,9 +56,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  var logger = Logger(
-    printer: PrettyPrinter(methodCount: 0)
-  );
+  var logger = Logger();
   int _counter = 0;
 
   void _incrementCounter() {
@@ -70,6 +68,11 @@ class _MyHomePageState extends State<MyHomePage> {
       // called again, and so nothing would appear to happen.
 
       logger.d("add");
+      logger.i("info");
+      logger.v("verbose");
+      logger.w("warning");
+      logger.e("error");
+
       _counter++;
     });
   }
