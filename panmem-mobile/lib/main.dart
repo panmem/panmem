@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Panmem',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
       logger.d("add");
       logger.i("info");
       logger.v("verbose");
-      logger.w("warning");
+      logger.w("warning----");
       logger.e("error");
 
       _counter++;
